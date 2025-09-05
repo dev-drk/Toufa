@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Pour Ma Toufa 💌</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Patrick+Hand&display=swap');
+
+  body {
+    margin: 0; padding: 0;
+    background: #fff0f5;
+    font-family: 'Patrick Hand', cursive;
+    color: #4b2e3e;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+    background-image:
+      radial-gradient(circle at 20% 20%, rgba(255, 192, 203, 0.15) 1px, transparent 1px),
+      radial-gradient(circle at 80% 80%, rgba(255, 182, 193, 0.15) 1px, transparent 1px);
+    background-size: 60px 60px;
+  }
+
+  .letter {
+    background: linear-gradient(135deg, #fffaf6 0%, #ffe4ec 100%);
+    padding: 35px 30px;
+    border-radius: 25px;
+    max-width: 95vw;
+    max-height: 85vh;
+    box-shadow:
+      0 4px 15px rgba(255, 105, 180, 0.25),
+      inset 0 0 20px #ffd1dc;
+    border: 2px dashed #ffc0cb;
+    overflow-y: auto;
+    text-align: center;
+    position: relative;
+    scrollbar-width: thin;
+    scrollbar-color: #f06292 #fffaf6;
+  }
+
+  .letter::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  .letter::-webkit-scrollbar-track {
+    background: #fffaf6;
+    border-radius: 10px;
+  }
+
+  .letter::-webkit-scrollbar-thumb {
+    background-color: #f06292;
+    border-radius: 10px;
+    border: 2px solid #fffaf6;
+  }
+
+  h1 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 3rem;
+    color: #d6336c;
+    margin-bottom: 15px;
+    text-shadow: 1px 1px 2px #ffa6c9;
+    opacity: 0;
+    animation: fadeIn 1.5s forwards ease-in;
+  }
+
+  p {
+    font-size: 1.25rem;
+    line-height: 1.5;
+    white-space: pre-line;
+    margin: 20px 0 40px;
+    background: #fff0f5;
+    padding: 15px 20px;
+    border-radius: 15px;
+    box-shadow: 0 2px 8px rgba(214, 51, 108, 0.15);
+    text-shadow: 0 1px 2px rgba(255, 255, 255, 0.7);
+  }
+
+  button.kiss-btn, button.reset-btn {
+    font-family: 'Patrick Hand', cursive;
+    font-size: 1.2rem;
+    color: #fff;
+    background: linear-gradient(45deg, #d6336c, #f06292);
+    border: none;
+    border-radius: 50px;
+    padding: 15px 35px;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(214, 51, 108, 0.6);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    margin: 0 10px;
+  }
+
+  button.kiss-btn:hover, button.reset-btn:hover {
+    background: linear-gradient(45deg, #f06292, #d6336c);
+    box-shadow: 0 8px 25px rgba(240, 98, 146, 0.8);
+    animation: pulse 1.2s infinite;
+  }
+
+  .extra-text {
+    margin-top: 25px;
+    font-size: 1.3rem;
+    color: #b32e54;
+    min-height: 2em;
+    height: auto;
+    font-weight: 600;
+    letter-spacing: 1.1px;
+    text-shadow: 0 1px 2px rgba(255, 255, 255, 0.7);
+  }
+
+  /* Confetti cœurs */
+  .confetti {
+    position: fixed;
+    top: -10px;
+    pointer-events: none;
+    user-select: none;
+    animation-timing-function: linear;
+    opacity: 0.7;
+    animation-name: fall, sway;
+    animation-duration: 7s, 3s;
+    animation-iteration-count: 1, infinite;
+    animation-timing-function: linear, ease-in-out;
+  }
+
+  @keyframes fall {
+    0% { transform: translateY(0) rotate(0deg); opacity: 1;}
+    100% { transform: translateY(110vh) rotate(360deg); opacity: 0;}
+  }
+
+  @keyframes sway {
+    0%, 100% { transform: translateX(0); }
+    50% { transform: translateX(10px); }
+  }
+
+  @keyframes pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+  }
+
+  @keyframes fadeIn {
+    to { opacity: 1; }
+  }
+
+  @media (max-width: 600px) {
+    .letter {
+      padding: 25px 20px;
+      max-height: 90vh;
+    }
+    h1 {
+      font-size: 2.2rem;
+    }
+    p {
+      font-size: 1.1rem;
+      margin-bottom: 30px;
+      line-height: 1.4;
+    }
+    button.kiss-btn, button.reset-btn {
+      font-size: 1.05rem;
+      padding: 12px 28px;
+      margin: 10px 5px 0;
+      display: block;
+      width: 100%;
+      max-width: 300px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .extra-text {
+      font-size: 1.15rem;
+    }
+  }
+</style>
+</head>
+<body>
+
+  <div class="letter" aria-live="polite">
+    <h1>Pour Toi, Ma Toufa 💌</h1>
+    <p>
+      Ma princesse adorée,  
+      Tu es la plus belle chose que la vie m’ait donnée.  
+      Chaque fois que je pense à toi, mon cœur s’apaise,  
+      Comme si ton sourire avait le pouvoir de calmer mes tempêtes.  
+
+      Je t’aime d’un amour pur et vrai,  
+      Un amour qui ne connaît ni frontières, ni limites.  
+      Même si la distance nous sépare,  
+      Rien ne pourra effacer ce que je ressens pour toi.  
+
+      Chaque battement de mon cœur porte ton nom,  
+      Chaque souffle rappelle que tu es mon unique raison.  
+      Je suis à toi, entièrement, corps et âme,  
+      Et je le resterai, même dans les plus longs silences.  
+
+      Pars sans crainte, mon amour,  
+      Ce voyage est une étape vers tes rêves.  
+      Je sais que tu feras briller ton avenir,  
+      Et que tu rendras tes parents fiers de toi,  
+      Tout comme je suis déjà fier d’être à tes côtés.  
+
+      Le temps peut sembler long,  
+      Les kilomètres peuvent sembler lourds,  
+      Mais ils ne seront jamais assez forts  
+      Pour effacer la force de notre lien.  
+
+      Alors avance avec confiance,  
+      Fais honneur à tes efforts et à ton courage.  
+      Moi, je garderai ton amour comme un trésor,  
+      Et chaque jour, je prierai ton retour dans mes bras.  
+
+      Car tu es ma princesse adorée,  
+      Mon éternel refuge, ma vérité.  
+      Et je t’attendrai, toujours,  
+      Avec le même cœur qui bat, uniquement pour toi.
+    </p>
+
+    <button class="kiss-btn" id="kissBtn" aria-label="Découvrir un message doux">Clique ici Ne Kele Ka Tane</button>
+    <button class="reset-btn" id="resetBtn" aria-label="Recommencer les messages" style="display:none;">Recommencer 💌</button>
+    <div class="extra-text" id="extraText" aria-live="assertive"></div>
+  </div>
+
+  <audio id="kissSound" src="https://freesound.org/data/previews/67/67952_634166-lq.mp3" preload="auto"></audio>
+
+  <script>
+    const phrases = [
+      "Tu es ma Princesse adorée 👑",
+      "Tu es ma P’tite Femme 💕",
+      "Tu es Mon Ange 😇",
+      "Tu es Ma Chérie ❤️",
+      "Tu es Ma Puce 🐞",
+      "Tu es Ma Maman Jr 🤱",
+      "Tu es la Femme de ma vie 💍",
+      "Tu es la future Maman de mes enfants 👶",
+      "Tu es Ma Reine 👸",
+    ];
+
+    const extraText = document.getElementById('extraText');
+    const kissBtn = document.getElementById('kissBtn');
+    const resetBtn = document.getElementById('resetBtn');
+    const kissSound = document.getElementById('kissSound');
+
+    let currentPhraseIndex = 0;
+    let typingInterval;
+
+    function typeText(text, element, speed = 50) {
+      element.textContent = '';
+      let i = 0;
+      return new Promise(resolve => {
+        typingInterval = setInterval(() => {
+          element.textContent += text.charAt(i);
+          i++;
+          if (i > text.length - 1) {
+            clearInterval(typingInterval);
+            resolve();
+          }
+        }, speed);
+      });
+    }
+
+    kissBtn.addEventListener('click', async () => {
+      kissBtn.disabled = true;
+      kissSound.currentTime = 0;
+      kissSound.play();
+      if(currentPhraseIndex < phrases.length){
+        await typeText(phrases[currentPhraseIndex], extraText, 50);
+        currentPhraseIndex++;
+      } else {
+        await typeText("💘 Mon cœur t’appartient pour l’éternité, Ma Toufa 💘", extraText, 50);
+        kissBtn.style.display = 'none';
+        resetBtn.style.display = 'inline-block';
+      }
+      kissBtn.disabled = false;
+    });
+
+    resetBtn.addEventListener('click', () => {
+      currentPhraseIndex = 0;
+      extraText.textContent = '';
+      kissBtn.style.display = 'inline-block';
+      resetBtn.style.display = 'none';
+    });
+
+    function createConfetti(){
+      const confetti = document.createElement('div');
+      confetti.classList.add('confetti');
+      confetti.textContent = Math.random() > 0.5 ? '💖' : '💗';
+      confetti.style.left = Math.random() * window.innerWidth + 'px';
+      confetti.style.fontSize = (Math.random() * 18 + 12) + 'px';
+      confetti.style.animationDuration = (Math.random() * 6 + 5) + 's, 3s';
+      document.body.appendChild(confetti);
+
+      setTimeout(() => confetti.remove(), 11000);
+    }
+
+    setInterval(createConfetti, 400);
+  </script>
+
+</body>
+</html>
